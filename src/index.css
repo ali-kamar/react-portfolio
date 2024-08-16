@@ -17,4 +17,7 @@
 .card {
   @apply 
 }
+.tech{
+  @apply border border-purple-500 p-3 rounded-lg
+}
 }

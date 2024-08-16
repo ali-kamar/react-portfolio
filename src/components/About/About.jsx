@@ -73,9 +73,9 @@ const About = () => {
             />
           </motion.svg>
           <motion.img
-            variants={container(1.2)}
-            initial="hidden"
-            animate="visible"
+            initial={{x:100, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:1, delay:1.2}}
             src={profilePic}
             alt="Ali Kamar"
             className="w-96 relative z-10"
