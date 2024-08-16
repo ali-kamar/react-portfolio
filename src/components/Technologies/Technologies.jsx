@@ -21,7 +21,7 @@ const Technologies = () => {
         <h1 className="pb-16 text-4xl font-thin tracking-wider text-center">
           Technologies
         </h1>
-        <div className="flex gap-4 mb-8">
+        <div className="flex gap-4 mb-8 flex-wrap">
           <motion.div
             variants={iconVariants(2.5)}
             initial="initial"

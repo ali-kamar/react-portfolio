@@ -7,11 +7,12 @@ export const HERO_CONTENT = `I am a passionate full stack developer with a knack
 
 export const EXPERIENCES = [
   {
+    id: 1,
     year: "Jul-2024 - Present",
     role: "Full Stack Developer Intern",
     company: "OctaNet Services Pvt Ltd.",
     description: `Developed a full-stack product management admin page using MongoDB, Express, React, and Node.js (MERN). Implemented core functionalities including product creation, editing, deletion, and category-based filtering. Ensured responsiveness and seamless user experience across devices.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    technologies: ["Node.js", "React.js", "Express.js", "MongoDB"],
   },
 ];
 
