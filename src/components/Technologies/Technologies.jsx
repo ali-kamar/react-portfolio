@@ -22,12 +22,54 @@ const Technologies = () => {
           Technologies
         </h1>
         <div className="flex gap-4 mb-8">
-          <div className="tech">{icons.React}</div>
-          <div className="tech">{icons.Express}</div>
-          <div className="tech">{icons.Node}</div>
-          <div className="tech">{icons.MongoDB}</div>
-          <div className="tech">{icons.PostgreSQL}</div>
-          <div className="tech">{icons.Tailwind}</div>
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="tech"
+          >
+            {icons.React}
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="tech"
+          >
+            {icons.Express}
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="tech"
+          >
+            {icons.Node}
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="tech"
+          >
+            {icons.MongoDB}
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="tech"
+          >
+            {icons.PostgreSQL}
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="tech"
+          >
+            {icons.Tailwind}
+          </motion.div>
         </div>
       </div>
     </div>
