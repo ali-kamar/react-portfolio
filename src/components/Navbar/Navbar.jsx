@@ -1,32 +1,9 @@
-import React, {useState, useEffect} from 'react'
-import logo from "../../assets/ak-logo.jpg"
+import React, { useContext } from "react";
+import logo from "../../assets/ak-logo.jpg";
+import { DarkModeContext } from "../../context/DarkModeContext";
 const Navbar = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
-    // Check for saved dark mode preference in localStorage
-    useEffect(() => {
-      const savedMode = localStorage.getItem("darkMode");
-      if (savedMode === "true") {
-        setIsDarkMode(true);
-        document.documentElement.classList.add("dark");
-        
-      }
-    }, []);
-
-    // Toggle dark mode and apply class
-    const toggleDarkMode = () => {
-      setIsDarkMode((prevMode) => {
-        const newMode = !prevMode;
-        if (newMode) {
-          document.documentElement.classList.add("dark");
-          localStorage.setItem("darkMode", "true");
-        } else {
-          document.documentElement.classList.remove("dark");
-          localStorage.setItem("darkMode", "false");
-        }
-        return newMode;
-      });
-    };
   return (
     <div className="bg-purple-800 flex justify-between p-4 items-center mb-20">
       <div className="logo w-20 ">
@@ -78,13 +55,16 @@ const Navbar = () => {
             </svg>
           </a>
         </button>
-        <button className="dark" onClick={toggleDarkMode} >
+        <button
+          className="border-2 bg-black border-black rounded-full dark:bg-white dark:border-white"
+          onClick={toggleDarkMode}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
             viewBox="0 0 24 24"
-            className="text-white"
+            className="text-white dark:text-black"
           >
             <path
               fill="currentColor"
@@ -95,6 +75,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

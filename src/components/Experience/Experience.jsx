@@ -9,7 +9,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="pb-16 text-4xl font-thin tracking-wider text-center"
+        className="pb-16 text-4xl font-thin tracking-wider text-center dark:font-extralight"
       >
         Experience
       </motion.h1>
@@ -21,7 +21,9 @@ const Experience = () => {
             transition={{ duration: 1.5 }}
             className="w-1/4"
           >
-            <p className="text-sm mb-2 text-white">{job.year}</p>
+            <p className="text-sm mb-2 text-white dark:text-black">
+              {job.year}
+            </p>
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
@@ -38,7 +40,7 @@ const Experience = () => {
             {job.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="text-xs mr-2 text-purple-500 border p-1 rounded"
+                className="text-xs mr-2 text-purple-500 border p-1 rounded dark:border-black"
               >
                 {tech}
               </span>

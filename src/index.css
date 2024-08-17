@@ -12,13 +12,18 @@
   html {
   font-family: var(--font) ;
   color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
   @apply bg-black  
 }
-.card {
-  @apply 
+
+button {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
+
 .tech{
   @apply border border-purple-500 p-3 rounded-lg
 }
-
+.dark{
+   @apply bg-white text-black
+}
 }

@@ -9,7 +9,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="pb-16 text-4xl font-thin tracking-wider text-center"
+        className="pb-16 text-4xl font-thin tracking-wider text-center dark:font-extralight"
       >
         Projects
       </motion.h1>
@@ -44,7 +44,7 @@ const Projects = () => {
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="text-xs mr-2 text-purple-500 border p-1 rounded"
+                className="text-xs mr-2 text-purple-500 border dark:border-black p-1 rounded"
               >
                 {tech}
               </span>
