@@ -23,6 +23,7 @@ export const PROJECTS = [
     description:
       "A fully functional admin page website with features like product listing, adding, editing, delete, and user authentication.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+    link: "https://github.com/ali-kamar/shop-admin",
   },
   {
     title: "Todo-List",
@@ -30,13 +31,15 @@ export const PROJECTS = [
     description:
       "An application for managing tasks and projects, with features such as task creation, deletion, and editing.",
     technologies: ["React.js", "Tailwind", "Express.js", "PostgreSQL"],
+    link: "https://github.com/ali-kamar/todo-list",
   },
   {
     title: "Restaurant Menu App",
     image: project1,
     description:
-      "A website showcasing Restaurant Food Menu.",
+      "A website showcasing Restaurant Food Menu with ability to filter food to specified categories.",
     technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/ali-kamar/Restaurant-menu",
   },
   {
     title: "Simon Game",
@@ -44,11 +47,8 @@ export const PROJECTS = [
     description:
       "Simon Game is a very known game where user should follow the color sequence to pass levels.",
     technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/ali-kamar/Simon-Game",
   },
 ];
 
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};
+

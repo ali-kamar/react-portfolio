@@ -12,7 +12,7 @@
   html {
   font-family: var(--font) ;
   color: white;
-  @apply bg-black
+  @apply bg-black  
 }
 .card {
   @apply 
@@ -20,4 +20,5 @@
 .tech{
   @apply border border-purple-500 p-3 rounded-lg
 }
+
 }

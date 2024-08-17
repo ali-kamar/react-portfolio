@@ -1,8 +1,8 @@
 import React from "react";
-import { EXPERIENCES } from "../../constants";
+import { PROJECTS } from "../../constants";
 import { motion } from "framer-motion";
 
-const Experience = () => {
+const Projects = () => {
   return (
     <div className="mt-24 border-b border-neutral-700 pb-24 container">
       <motion.h1
@@ -11,17 +11,25 @@ const Experience = () => {
         transition={{ duration: 1.5 }}
         className="pb-16 text-4xl font-thin tracking-wider text-center"
       >
-        Experience
+        Projects
       </motion.h1>
-      {EXPERIENCES.map((job) => (
-        <div key={job.id} className="flex justify-center mb-8">
+      {PROJECTS.map((project, index) => (
+        <div key={index} className="flex justify-center mb-8">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
             className="w-1/4"
           >
-            <p className="text-sm mb-2 text-white">{job.year}</p>
+            <a href={project.link}>
+              <img
+                src={project.image}
+                width={250}
+                height={250}
+                className="mb-2 "
+                alt={project.title}
+              ></img>
+            </a>
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
@@ -29,13 +37,11 @@ const Experience = () => {
             transition={{ duration: 1.5, delay: 0.5 }}
             className="w3/4"
           >
-            <h6 className="mb-2">
-              {job.role} - <span className="text-sm">{job.company}</span>
-            </h6>
+            <h6 className="mb-2">{project.title}</h6>
             <p className="mb-4 text-sm max-w-xl text-neutral-400">
-              {job.description}
+              {project.description}
             </p>
-            {job.technologies.map((tech, index) => (
+            {project.technologies.map((tech, index) => (
               <span
                 key={index}
                 className="text-xs mr-2 text-purple-500 border p-1 rounded"
@@ -50,4 +56,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Projects;

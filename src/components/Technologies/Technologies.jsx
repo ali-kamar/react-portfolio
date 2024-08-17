@@ -18,10 +18,20 @@ const Technologies = () => {
   return (
     <div className="container mt-24  flex justify-center border-b border-neutral-700 pb-24">
       <div>
-        <h1 className="pb-16 text-4xl font-thin tracking-wider text-center">
+        <motion.h1
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1.5 }}
+          className="pb-16 text-4xl font-thin tracking-wider text-center"
+        >
           Technologies
-        </h1>
-        <div className="flex gap-4 mb-8 flex-wrap">
+        </motion.h1>
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1.5 }}
+          className="flex gap-4 mb-8 flex-wrap"
+        >
           <motion.div
             variants={iconVariants(2.5)}
             initial="initial"
@@ -70,7 +80,7 @@ const Technologies = () => {
           >
             {icons.Tailwind}
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
