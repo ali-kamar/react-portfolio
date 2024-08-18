@@ -58,18 +58,18 @@ const Contact = () => {
           type="text"
           placeholder="Full Name"
           name="name"
-          className="focus:outline-none mb-6 bg-transparent border-b border-neutral-500 p-6 w-3/4"
+          className="focus:outline-none mb-6 bg-transparent border-b border-neutral-500 p-6 xxs:w-full xs:w-3/4"
         />
         <input
           type="email"
           placeholder="Email"
           name="email"
-          className="focus:outline-none mb-6 bg-transparent border-b border-neutral-500 p-6 w-3/4"
+          className="focus:outline-none mb-6 bg-transparent border-b border-neutral-500 p-6 xxs:w-full xs:w-3/4"
         />
         <textarea
           placeholder="Message"
           name="message"
-          className="focus:outline-none mb-6 bg-transparent border-b border-neutral-500 p-6 w-3/4"
+          className="focus:outline-none mb-6 bg-transparent border-b border-neutral-500 p-6 xxs:w-full xs:w-3/4"
         ></textarea>
         <button
           className="w-3/4 border border-neutral-500 p-3 rounded mb-24 hover:bg-neutral-500"

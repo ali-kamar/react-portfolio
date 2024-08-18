@@ -14,19 +14,17 @@ const Projects = () => {
         Projects
       </motion.h1>
       {PROJECTS.map((project, index) => (
-        <div key={index} className="flex justify-center mb-8">
+        <div key={index} className="flex justify-center mb-8 gap-8 sm:text-start  sm:flex-row xs:flex-col xxs:flex-col">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
-            className="w-1/4"
+            className="sm:w-1/4 xxs:w-full "
           >
-            <a href={project.link}>
+            <a href={project.link} className="flex justify-center sm:block">
               <img
                 src={project.image}
-                width={250}
-                height={250}
-                className="mb-2 "
+                className="mb-2 hover:scale-125 transition xxs:w-300 xxs:h-113 sm:w-250 sm:h-250"
                 alt={project.title}
               ></img>
             </a>
@@ -35,10 +33,10 @@ const Projects = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.5, delay: 0.5 }}
-            className="w3/4"
+            className="w3/4 xs:mx-auto sm:mx-0 "
           >
             <h6 className="mb-2">{project.title}</h6>
-            <p className="mb-4 text-sm max-w-xl text-neutral-400">
+            <p className="mb-4 text-sm md:max-w-l lg:max-w-xl sm:max-w-xs xs:max-w-xs text-neutral-400">
               {project.description}
             </p>
             {project.technologies.map((tech, index) => (

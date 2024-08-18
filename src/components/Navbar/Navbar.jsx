@@ -5,7 +5,7 @@ const Navbar = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <div className="bg-purple-800 flex justify-between p-4 items-center mb-20">
+    <div className="bg-purple-800 flex justify-between p-4 items-center mb-20 w-full">
       <div className="logo w-20 ">
         <img src={logo} alt="" className="rounded-full" />
       </div>
@@ -65,6 +65,7 @@ const Navbar = () => {
             height="40"
             viewBox="0 0 24 24"
             className="text-white dark:text-black"
+            alt={darkMode}
           >
             <path
               fill="currentColor"

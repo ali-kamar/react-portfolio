@@ -14,12 +14,12 @@ const Experience = () => {
         Experience
       </motion.h1>
       {EXPERIENCES.map((job) => (
-        <div key={job.id} className="flex justify-center mb-8">
+        <div key={job.id} className="flex justify-center mb-8 flex-wrap">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
-            className="w-1/4"
+            className="w-full"
           >
             <p className="text-sm mb-2 text-white dark:text-black">
               {job.year}
@@ -29,12 +29,13 @@ const Experience = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.5, delay: 0.5 }}
-            className="w3/4"
+            className=" "
           >
-            <h6 className="mb-2">
-              {job.role} - <span className="text-sm">{job.company}</span>
+            <h6 className="mb-2 xs:text-xs sm:text-16">
+              {job.role} -{" "}
+              <span className="sm:text-sm xs:text-xs ">{job.company}</span>
             </h6>
-            <p className="mb-4 text-sm max-w-xl text-neutral-400">
+            <p className="mb-4 xs:text-xs sm:text-sm md:w-500 text-neutral-400 sm:max-w-sm xs:max-w-xs">
               {job.description}
             </p>
             {job.technologies.map((tech, index) => (

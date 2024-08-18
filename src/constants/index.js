@@ -21,7 +21,7 @@ export const PROJECTS = [
     title: "Product Management Admin App",
     image: project4,
     description:
-      "A fully functional admin page website with features like product listing, adding, editing, delete, and user authentication.",
+      "A fully functional admin page website contain features like product listing, adding, editing, delete, and user authentication.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     link: "https://github.com/ali-kamar/shop-admin",
   },
