@@ -19,7 +19,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
-            className="w-full"
+            className="sm:w-1/4 xxs:w-full"
           >
             <p className="text-sm mb-2 text-white dark:text-black">
               {job.year}
