@@ -36,7 +36,7 @@ const About = () => {
           variants={container(1)}
           initial="hidden"
           animate="visible"
-          className="py-6 my-2 lg:max-w-xl font-light tracking-tighter md:max-w-sm sm:w-500 xxs:w-300 "
+          className="text-justify py-6 my-2 lg:max-w-xl font-light tracking-tighter md:max-w-sm sm:w-500 xxs:w-300 "
         >
           {HERO_CONTENT}
         </motion.p>

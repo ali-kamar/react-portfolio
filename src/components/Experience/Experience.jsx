@@ -35,7 +35,7 @@ const Experience = () => {
               {job.role} -{" "}
               <span className="sm:text-sm xs:text-xs ">{job.company}</span>
             </h6>
-            <p className="mb-4 xs:text-xs sm:text-sm md:w-500 text-neutral-400 sm:max-w-sm xs:max-w-xs">
+            <p className="text-justify mb-4 xs:text-xs sm:text-sm md:w-500 text-neutral-400 sm:max-w-sm xs:max-w-xs">
               {job.description}
             </p>
             {job.technologies.map((tech, index) => (

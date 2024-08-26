@@ -14,7 +14,10 @@ const Projects = () => {
         Projects
       </motion.h1>
       {PROJECTS.map((project, index) => (
-        <div key={index} className="flex justify-center mb-8 gap-8 sm:text-start  sm:flex-row xs:flex-col xxs:flex-col">
+        <div
+          key={index}
+          className="flex justify-center mb-8 gap-8 sm:text-start  sm:flex-row xs:flex-col xxs:flex-col"
+        >
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
@@ -36,7 +39,7 @@ const Projects = () => {
             className="w3/4 xs:mx-auto sm:mx-0 "
           >
             <h6 className="mb-2">{project.title}</h6>
-            <p className="mb-4 text-sm md:max-w-l lg:max-w-xl sm:max-w-xs xs:max-w-xs text-neutral-400">
+            <p className="text-justify mb-4 text-sm md:max-w-l lg:max-w-xl sm:max-w-xs xs:max-w-xs text-neutral-400">
               {project.description}
             </p>
             {project.technologies.map((tech, index) => (
