@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
-import { icons } from '../../constants/technologies';
+import { icons } from "../../constants/technologies";
+
 const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {
@@ -15,6 +16,8 @@ const iconVariants = (duration) => ({
 });
 
 const Technologies = () => {
+  const iconKeys = Object.keys(icons);
+
   return (
     <div className="container mt-24 flex justify-center border-b border-neutral-700 pb-24">
       <div>
@@ -32,58 +35,21 @@ const Technologies = () => {
           transition={{ duration: 1.5 }}
           className="flex gap-4 mb-8 flex-wrap justify-center"
         >
-          <motion.div
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className="tech"
-          >
-            {icons.React}
-          </motion.div>
-          <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="tech"
-          >
-            {icons.Express}
-          </motion.div>
-          <motion.div
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className="tech"
-          >
-            {icons.Node}
-          </motion.div>
-          <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="tech"
-          >
-            {icons.MongoDB}
-          </motion.div>
-          <motion.div
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className="tech"
-          >
-            {icons.PostgreSQL}
-          </motion.div>
-          <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="tech"
-          >
-            {icons.Tailwind}
-          </motion.div>
+          {iconKeys.map((key, index) => (
+            <motion.div
+              key={key}
+              variants={iconVariants(index % 2 === 0 ? 2.5 : 3)}
+              initial="initial"
+              animate="animate"
+              className="tech"
+            >
+              {icons[key]}
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </div>
   );
-}
+};
 
-export default Technologies
+export default Technologies;

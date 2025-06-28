@@ -30,7 +30,7 @@ const About = () => {
           className="bg-gradient-to-r from-purple-500 via-slate-500 to-white dark:to-black dark:from-purple-800
          text-transparent lg:text-4xl xxs:text-3xl tracking-tight bg-clip-text"
         >
-          Full Stack Developer
+          Software Engineer
         </motion.span>
         <motion.p
           variants={container(1)}

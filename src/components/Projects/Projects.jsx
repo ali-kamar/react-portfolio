@@ -42,14 +42,16 @@ const Projects = () => {
             <p className="text-justify mb-4 text-sm md:max-w-l lg:max-w-xl sm:max-w-xs xs:max-w-xs text-neutral-400">
               {project.description}
             </p>
-            {project.technologies.map((tech, index) => (
-              <span
-                key={index}
-                className="text-xs mr-2 text-purple-500 border dark:border-black p-1 rounded"
-              >
-                {tech}
-              </span>
-            ))}
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="text-xs mr-2 text-purple-500 border dark:border-black p-1 rounded"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </motion.div>
         </div>
       ))}
