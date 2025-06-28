@@ -16,6 +16,14 @@ export const EXPERIENCES = [
     description: `Collaborated with a team to develop an ERP system for a Brazilian company. Contributed to backend development using Express.js, implementing CRUD operations and authentication. Built responsive UI components with React.js, integrating API data for enhanced functionality`,
     technologies: ["Node.js", "React.js", "Express.js", "PostgreSQL"],
   },
+  {
+    id: 2,
+    year: "Feb-2025 - Apr-2025",
+    role: "Cyber Security Specialist Intern",
+    company: "CyberArm",
+    description: `Completed courses in, FCF - Introduction to the Threat Landscape 2.0 Self-Paced, FCA - FortiGate 7.4 Operator Self-Paced, Network Fundamentals, Gained strong foundational knowledge of cyber threats, network defense strategies, and firewall operations.`,
+    technologies: ["Packet Tracer", "FortiGate", "Cyber Security"],
+  },
 ];
 
 export const PROJECTS = [
